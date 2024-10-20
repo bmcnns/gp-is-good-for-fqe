@@ -2,4 +2,8 @@
 venv/
 =======
 results/
+<<<<<<< HEAD
 >>>>>>> 3c2bded (Adds project files)
+=======
+*.so
+>>>>>>> f331e0f (updates gitignore)
