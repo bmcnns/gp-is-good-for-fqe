@@ -1,3 +1,0 @@
-/home/bryce/Repos/gp-is-good-for-fqe/build/CMakeFiles/linear_gp.dir
-/home/bryce/Repos/gp-is-good-for-fqe/build/CMakeFiles/edit_cache.dir
-/home/bryce/Repos/gp-is-good-for-fqe/build/CMakeFiles/rebuild_cache.dir
