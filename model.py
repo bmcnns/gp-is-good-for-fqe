@@ -25,8 +25,6 @@ class Model:
                 state_action = np.concatenate([[action], observation.flatten()])
                 inputs.append(state_action)
 
-                next_state_actions = [np.concatenate([[a], next_observation.flatten()]) for a in range(3)]
-
                 next_q_values = list(map(individual.predict, next_state_actions))
 
                 target = reward + parameters.DISCOUNT_FACTOR * np.max(next_q_values)
@@ -54,3 +52,5 @@ class Model:
 
             Mutator.mutateProgram(child)
             self.population.append((child, uuid4()))
+
+    def predict(self):

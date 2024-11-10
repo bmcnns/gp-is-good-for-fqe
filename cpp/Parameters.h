@@ -8,7 +8,7 @@
 class Parameters {
 public:
     static const int NUM_REGISTERS = 8;
-    static const int NUM_FEATURES = 7*7*3+1;
+    static const int NUM_FEATURES = 16;
     static const int MAX_PROGRAM_LENGTH = 100;
     static const int NUM_OP_CODES = 6;
     inline static const double DELETE_INSTRUCTION_PROBABILITY = 0.7;

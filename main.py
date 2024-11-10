@@ -7,7 +7,7 @@ import os
 
 
 def get_batch_data(dataset):
-    four_tuples = []
+    five_tuples = []
     for episode in dataset.iterate_episodes():
         observations = episode.observations['image']
         num_steps = len(observations) - 1
@@ -17,10 +17,11 @@ def get_batch_data(dataset):
             action = episode.actions[i]
             reward = episode.rewards[i]
             next_observation = observations[i + 1]
+            next_action = episode.actions[i + 1]
 
-            four_tuples.append((observation, action, reward, next_observation))
+            five_tuples.append((observation, action, reward, next_observation, next_action))
 
-    return four_tuples
+    return five_tuples
 
 dataset = minari.load_dataset("D4RL/minigrid/fourrooms-v0")
 data = get_batch_data(dataset)
